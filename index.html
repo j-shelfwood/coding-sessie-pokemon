@@ -1,0 +1,51 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.3.2"></script>
+	</head>
+	<body class="flex flex-col justify-center items-center h-100vh">
+		<h2 class="text-red-600 text-2xl mt-20">Poke gym</h2>
+		<!-- This element shows details about the pokemon -->
+		<div
+			id="pokemon-details"
+			class="hidden bg-white rounded-lg shadow-lg p-6 my-10"
+		>
+			<!-- Show the name, region, power level and stats -->
+			<h3 class="text-lg font-medium mb-2" id="name">Pokemon Name</h3>
+			<p class="text-gray-600 mb-2" id="region">Region:</p>
+			<p class="text-gray-600 mb-2" id="power-level">Power Level:</p>
+			<div id="stats"></div>
+			<div id="weaknesses" class="my-2">
+				<!-- Template badge -->
+				<span
+					id="badge"
+					class="hidden bg-red-100 text-red-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-red-400 border border-red-400"
+					>Red</span
+				>
+			</div>
+		</div>
+		<!-- Add two buttons -->
+		<div
+			class="flex justify-center items-center container mx-auto gap-4 mt-10"
+		>
+			<!-- Who's at the door button -->
+			<button
+				id="at-the-door"
+				class="p-1 bg-black text-white rounded-md hover:bg-gray-700"
+			>
+				Who's at the door?
+			</button>
+			<!-- Start fight button -->
+			<button
+				id="start-fight"
+				class="p-1 bg-black text-white rounded-md hover:bg-gray-700 hidden"
+			>
+				Start fight
+			</button>
+		</div>
+		<script src="/script.js"></script>
+	</body>
+</html>
